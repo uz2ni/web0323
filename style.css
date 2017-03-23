@@ -1,0 +1,71 @@
+html{
+    box-sizing:border-box;
+    color:red;
+/*  background-image: url();
+    background-size: cover;
+*/
+    background-color: #D9DADC;
+}
+*{
+    margin: 0;
+}
+a, li{
+    text-decoration: none;
+    color: inherit; /*부모값 상속받음*/
+    list-style-type: none;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header{
+    display:flex;
+    justify-content: space-between;
+    line-height: 7vh;
+}
+.gnb > li{
+    display:inline;
+    padding-left: 20px;
+}
+
+.landing{
+    height: 40vh;
+    display: flex;
+    flex-direction: column; /*flex기본방향:가로 direction주면 세로*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.landing-title{
+    height:70%;
+    font-size:50px;
+    display:flex;
+    align-items: center; /*세로가운데정렬*/
+}
+.landing-para{
+    width:60%;
+    padding-bottom:30px;
+}
+
+/*portfolio*/
+.portfolio{
+    height:50vh;
+    display:flex;
+}
+.work{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+.work > img{
+    width:30vh;
+    height:30vh;
+}
+.work > p{
+    width:60%;
+}
